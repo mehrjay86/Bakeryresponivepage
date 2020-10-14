@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.show {
+  background: linear-gradient(rgb(189, 182, 182), rgba(228, 222, 222, 0.5)),
+    url("photos/bakery.jpg");
+  background-size: center/cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 80%;
+}
+#showcase h1 {
+  font-size: 55px;
+  font-weight: lighter;
+}
+#showcase p {
+  padding: 200px 5px 0;
+}
+#showcase .btn {
+  margin: 20px 0 100px 0;
+  border-radius: 40px;
+  padding: 10px 30px;
+  background-color: rgb(110, 23, 45);
+  color: #ffffff;
+  transition: all 0.3s linear;
+}
+
+#showcase .btn:hover {
+  transform: scale(1.5);
+}
+/*---*/
+#border {
+  margin: 0;
+  background-color: rgb(161, 26, 78);
+  height: 90%;
+}
+#border .left {
+  width: 15%;
+  padding: 80px 0 10px 0;
+}
+#border .left h4 {
+  font-size: 25px;
+}
+#border .left h5 {
+  padding: 5px 0 0 0;
+  font-size: 14px;
+  font-weight: bolder;
+}
+#border .left p {
+  font-size: 12px;
+}
+#border .right {
+  width: 35%;
+}
+#border .right h4 {
+  padding: 80px 0 20px 0;
+}
+#border .right li {
+  width: 20%;
+  padding: 0;
+}
+#border .right p {
+  width: 15%;
+  display: inline;
+  padding-left: 20px;
+}
+/*-----*/
+#bakery {
+  margin: 90px 0 60px 0;
+}
+#bakery .card {
+  margin-top: 50px;
+  border: none;
+}
+#bakery .card-body p {
+  text-align: center;
+}
+#bakery .card-body h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 35px;
+}
+/*-----back section*/
+
+#back {
+  margin-top: 90px;
+}
+.photo {
+  padding-top: 80px;
+}
+.content {
+  width: 50%;
+  padding: 90px 20px 0 10px;
+}
+.content p {
+  font-size: 16px;
+  margin-top: 15px;
+  padding-left: 50px;
+  text-align: justify;
+}
+.content h2 {
+  font-size: 30px;
+}
+#back .btn {
+  margin-top: 20px;
+  border-radius: 24px;
+  background-color: rgb(27, 26, 26);
+  padding: 10px 20px;
+}
+#back .btn:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+#bc .content p {
+  padding-right: 25px;
+  text-align: center;
+}
+/*----form
+*/
+#dform {
+  margin-top: 80px;
+}
+#dform .btn {
+  border-radius: 30px;
+}
+form {
+  margin-bottom: 50px;
+}
+form input[type="text"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid black;
+}
+.mess textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid black;
+}
+
+/*8--*/
+#jum {
+  margin-top: 90px;
+}
+.jump {
+  background: linear-gradient(rgb(189, 182, 182), rgba(228, 222, 222, 0.5)),
+    url("photos/jum.jpg");
+  background-size: center/cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 80vh;
+}
+.jump h1 {
+  font-size: 50px;
+  padding: 150px;
+  font-family: monospace;
+}
+.footer {
+  height: 10vh;
+  margin-top: 0;
+}
+.footer p {
+  font-size: 16px;
+}
+
+/*-------media queries----*/
+@media (max-width: 992px) {
+  .show img {
+    width: 100%;
+  }
+  #bakery .card {
+    padding: 20px;
+    margin: 20px;
+  }
+  #bakery .card-body h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #bakery .card-body {
+    font-size: 15px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #border {
+    display: none;
+  }
+  #bakery .card {
+    width: 100%;
+  }
+  #bakery .card-body h2 {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  #bakery .card-body {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .content h2 {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .content p {
+    font-size: 10px;
+  }
+
+  form .btn {
+    margin: auto auto;
+  }
+  .jump h1 {
+    font-size: 25px;
+  }
+  .footer p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .show p {
+    font-size: 20px;
+  }
+  #bakery .card img {
+    width: 200px;
+  }
+  #bakery .card-body h2 {
+    font-size: 10px;
+    width: 100%;
+    text-align: left;
+  }
+  #bakery .card-body p {
+    font-size: 7px;
+    margin-bottom: 0;
+  }
+  #back {
+    margin: 0px;
+  }
+  #back p {
+    font-size: 9px;
+  }
+  #back h2 {
+    font-size: 12px;
+  }
+  #bc h2 {
+    font-size: 12px;
+  }
+  #bc p {
+    font-size: 8px;
+  }
+  #dform h2 {
+    font-size: 20px;
+  }
+  .jump h1 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+}
